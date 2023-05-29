@@ -16,7 +16,7 @@ struct LoginView: View {
                 
                 // Add your login form fields and logic here
                 
-                NavigationLink(destination: HomeView()) {
+                NavigationLink(destination: PeopleView()) {
                     Text("Login")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -24,6 +24,8 @@ struct LoginView: View {
                         .background(Color.blue)
                         .cornerRadius(10)
                 }
+                
+                
                 
                 Button(action: {
                     // Action to navigate to the registration screen
@@ -34,6 +36,7 @@ struct LoginView: View {
                         .padding()
                 }
             }
+            .navigationBarBackButtonHidden()
            // .padding()
            // .navigationTitle("Login")
         }
